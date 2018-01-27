@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, Slides, NavParams, App } from 'ionic-angular';
-
+import { Shows } from '../../providers/tinder-2'
 import { ExplorePage } from '../explore/explore';
 
 @IonicPage()
@@ -30,7 +30,11 @@ export class WelcomePage {
   }
 
   ionViewDidLoad() {
+    var shows = new Shows();
     console.log('ionViewDidLoad WelcomePage');
+    /// shows.getShows().then((data) => {
+    ///  console.log(data);
+    /// });
   }
 
   goToSwipe() {
