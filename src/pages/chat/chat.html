@@ -16,18 +16,7 @@
 </ion-header>
 
 <ion-content #content padding>
-  <div class="wrapper text-center h-full" layout vertical center center-center *ngIf="isNewMatch && messages.length == 0">
-    <div>
-      <div class="m-b">
-        <div class="text-lg">You matched with <b>Tindie</b></div>
-        <div>3 hours ago</div>
-      </div>
-      <div class="m-b">
-        <demo-avatar [sizeClass]="'thumb-xl'"></demo-avatar>
-      </div>
-      <div class="text-lg">Are your hands tied or something?</div>
-    </div>
-  </div>
+  
 
   <div class="chat-list" *ngIf="!isNewMatch || messages.length">
     <div class="chat-item" *ngFor="let item of messages" [ngClass]="{'me': item.isMe}">

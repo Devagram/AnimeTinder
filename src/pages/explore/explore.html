@@ -12,7 +12,7 @@
 
     <ion-buttons end>
       <button ion-button icon-only (click)="goToMessaging()">
-        <ion-icon name="ios-chatbubbles" color="muted"></ion-icon>
+        <ion-icon name="menu" color="muted"></ion-icon>
       </button>
     </ion-buttons>
   </ion-navbar>
@@ -22,7 +22,7 @@
   <div class="h-full no-cards" [hidden]="!isLoading" horizontal layout center center-center>
     <div class="ripple-container">
       <div class="thumb-lg ripple-trigger">
-        <img src="assets/img/hieu.png" class="rounded b b-2x box-shadow">
+        <img src="assets/img/logo.png" class="rounded b b-2x box-shadow">
       </div>
       <div class="ripple-1"></div>
       <div class="ripple-2"></div>
@@ -46,27 +46,27 @@
             </div>
           </div>
 
-          <div class="stamp stamp-like">Like</div>
-          <div class="stamp stamp-nope">Nope</div>
+          <div class="stamp stamp-like">Interested</div>
+          <div class="stamp stamp-nope">Not Interested</div>
         </div>
       </div>
     </div>
 
     <div class="bottom-actions" horizontal layout center around-justified>
-      <button ion-button color="white" class="button-revert" (click)="getMoreCards()">
-        <ion-icon name="md-refresh"></ion-icon>
+      <button ion-button color="white" class="button-hate" (click)="disliked()">
+        <ion-icon name="md-sad"></ion-icon>
       </button>
       <button ion-button color="white" class="button-dislike" (click)="disliked()">
         <ion-icon name="md-close"></ion-icon>
       </button>
-      <button ion-button color="white" class="button-star">
-        <ion-icon name="md-star"></ion-icon>
+      <button ion-button color="white" class="button-skip">
+        <ion-icon name="skip-forward"></ion-icon>
       </button>
       <button ion-button color="white" class="button-like" (click)="liked()">
-        <ion-icon name="md-heart"></ion-icon>
+        <ion-icon name="md-checkmark"></ion-icon>
       </button>
-      <button ion-button color="white" class="button-superlike">
-        <ion-icon name="ios-flash"></ion-icon>
+      <button ion-button color="white" class="button-superlike" (click)="liked()">
+        <ion-icon name="heart"></ion-icon>
       </button>
     </div>
   </div>
