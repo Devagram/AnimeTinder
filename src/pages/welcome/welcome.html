@@ -9,14 +9,22 @@
 
     <div class="text-center">
       <div>
-        <button ion-button round class="btn-tinder-login m-b-sm" (click)="goToSwipe()">LOG IN WITH FACEBOOK</button>
+        <button ion-button round class="btn-tinder-login m-b-sm" (click)="loginWithFB()">LOG IN WITH FACEBOOK</button>
+
+        <ion-card *ngIf="userData">
+          <ion-card-header>{{ userData.username }}</ion-card-header>
+          <img [src]="userData.picture" />
+          <ion-card-content>
+            <p>Email: {{ userData.email }}</p>
+            <p>First Name: {{ userData.first_name }}</p>
+          </ion-card-content>
+        </ion-card>
       </div>
 
 
       <div class="wrapper text-muted">
         <p>We don't post anything to Facebook.
-          <br>
-          By signing in, you agree to our <span class="text-u-l">Terms of Service</span> and <span class="text-u-l">Privacy Policy</span>
+          <br> By signing in, you agree to our <span class="text-u-l">Terms of Service</span> and <span class="text-u-l">Privacy Policy</span>
         </p>
       </div>
     </div>

@@ -24,6 +24,8 @@ import { Keyboard } from '@ionic-native/keyboard';
 import { SwingModule } from 'angular2-swing';
 import { ElasticModule } from 'ng-elastic';
 
+import { Facebook } from '@ionic-native/facebook';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -70,7 +72,8 @@ import { ElasticModule } from 'ng-elastic';
     SplashScreen,
     Keyboard,
     ImagePicker,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Facebook
   ]
 })
 export class AppModule {}

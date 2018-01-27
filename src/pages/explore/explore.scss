@@ -76,21 +76,21 @@ page-explore {
       font-weight: 700;
     }
     &:nth-child(2n) {
-      width: 60px;
-      height: 60px;
+      width: 48px;
+      height: 48px;
     }
     &:nth-child(2n+1) {
       width: 48px;
       height: 48px;
     }
     &.button-hate {
-      color: color($colors, revert);
+      color: color($colors, hate);
     }
     &.button-dislike {
       color: color($colors, dislike);
     }
-    &.button-star {
-      color: color($colors, star);
+    &.button-skip {
+      color: color($colors, skip);
     }
     &.button-like {
       color: color($colors, like);
