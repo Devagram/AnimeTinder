@@ -452,21 +452,17 @@ var WelcomePage = (function () {
         this.app = app;
         this.introSlides = [
             {
-                title: 'Discover new and interesting <br> people nearby',
+                title: 'Discover new and interesting <br> anime',
                 image: 'assets/img/intro/intro_1.png'
             },
             {
-                title: 'Swipe Right to like someone <br /> or Swipe Left to pass',
+                title: 'Swipe Right to like an anime <br /> or Swipe Left to dislike',
                 image: 'assets/img/intro/intro_2.png'
             },
             {
-                title: 'If they also Swipe Right <br /> then "It\'s a Match!"',
+                title: 'Based on your likes <br /> we find new "Matches!"',
                 image: 'assets/img/intro/intro_3.png'
             },
-            {
-                title: 'Only people you\'ve matched <br /> with can message you',
-                image: 'assets/img/intro/intro_4.png'
-            }
         ];
     }
     WelcomePage.prototype.ionViewDidLoad = function () {
@@ -482,15 +478,16 @@ var WelcomePage = (function () {
 }());
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('slides'),
-    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Slides */])
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Slides */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Slides */]) === "function" && _a || Object)
 ], WelcomePage.prototype, "slides", void 0);
 WelcomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'page-welcome',template:/*ion-inline-start:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/welcome/welcome.html"*/'<ion-content padding>\n  <div layout vertical center>\n    <ion-slides #slides pager flex>\n      <ion-slide *ngFor="let slide of introSlides">\n        <h3 class="font-thin" [innerHTML]="slide.title"></h3>\n        <img [src]="slide.image">\n      </ion-slide>\n    </ion-slides>\n\n    <div class="text-center">\n      <div>\n        <button ion-button round class="btn-tinder-login m-b-sm" (click)="goToSwipe()">LOG IN WITH FACEBOOK</button>\n      </div>\n      <div>\n        <button ion-button round small color="muted" outline (click)="goToSwipe()">LOG IN WITH PHONE NUMBER</button>\n      </div>\n\n      <div class="wrapper text-muted">\n        <p>We don\'t post anything to Facebook.\n          <br>\n          By signing in, you agree to our <span class="text-u-l">Terms of Service</span> and <span class="text-u-l">Privacy Policy</span>\n        </p>\n      </div>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/welcome/welcome.html"*/,
+        selector: 'page-welcome',template:/*ion-inline-start:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/welcome/welcome.html"*/'<ion-content padding>\n  <div layout vertical center>\n    <ion-slides #slides pager flex>\n      <ion-slide *ngFor="let slide of introSlides">\n        <h3 class="font-thin" [innerHTML]="slide.title"></h3>\n        <img [src]="slide.image">\n      </ion-slide>\n    </ion-slides>\n\n    <div class="text-center">\n      <div>\n        <button ion-button round class="btn-tinder-login m-b-sm" (click)="goToSwipe()">LOG IN WITH FACEBOOK</button>\n      </div>\n\n\n      <div class="wrapper text-muted">\n        <p>We don\'t post anything to Facebook.\n          <br>\n          By signing in, you agree to our <span class="text-u-l">Terms of Service</span> and <span class="text-u-l">Privacy Policy</span>\n        </p>\n      </div>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/welcome/welcome.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* App */]])
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* App */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* App */]) === "function" && _d || Object])
 ], WelcomePage);
 
+var _a, _b, _c, _d;
 //# sourceMappingURL=welcome.js.map
 
 /***/ }),

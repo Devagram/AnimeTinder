@@ -15,21 +15,17 @@ export class WelcomePage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public app: App) {
     this.introSlides = [
       {
-        title: 'Discover new and interesting <br> people nearby',
+        title: 'Discover new and interesting <br> anime',
         image: 'assets/img/intro/intro_1.png'
       },
       {
-        title: 'Swipe Right to like someone <br /> or Swipe Left to pass',
+        title: 'Swipe Right to like an anime <br /> or Swipe Left to dislike',
         image: 'assets/img/intro/intro_2.png'
       },
       {
-        title: 'If they also Swipe Right <br /> then "It\'s a Match!"',
+        title: 'Based on your likes <br /> we find new "Matches!"',
         image: 'assets/img/intro/intro_3.png'
       },
-      {
-        title: 'Only people you\'ve matched <br /> with can message you',
-        image: 'assets/img/intro/intro_4.png'
-      }
     ]
   }
 
