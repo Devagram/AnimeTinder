@@ -29,12 +29,19 @@
         "@ionic/storage": "2.0.1",
         "@types/lodash": "^4.14.91",
         "angular2-swing": "0.14.0",
+<<<<<<< HEAD
         "angularfire2": "^5.0.0-rc.6",
         "com.synconset.imagepicker": "^2.1.10",
         "cordova-browser": "5.0.3",
         "cordova-ios": "4.5.4",
         "cordova-plugin-device": "^1.1.7",
         "cordova-plugin-facebook4": "^1.9.1",
+=======
+        "com.synconset.imagepicker": "^2.1.10",
+        "cordova-browser": "5.0.3",
+        "cordova-ios": "^4.4.0",
+        "cordova-plugin-device": "^1.1.7",
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
         "cordova-plugin-ionic-webview": "^1.1.16",
         "cordova-plugin-splashscreen": "^4.1.0",
         "cordova-plugin-statusbar": "git+https://github.com/apache/cordova-plugin-statusbar.git",

@@ -135,7 +135,11 @@ __decorate([
 ], ChatPage.prototype, "content", void 0);
 ChatPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+<<<<<<< HEAD
         selector: 'page-chat',template:/*ion-inline-start:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/chat/chat.html"*/'<ion-header no-border class="header-shadow">\n  <ion-navbar color="white">\n    <ion-title>\n      <div class="avatar-title">\n        <demo-avatar [sizeClass]="\'thumb-xs\'"></demo-avatar>\n        <div class="avatar-name">Tindie</div>\n      </div>\n    </ion-title>\n\n    <ion-buttons end>\n      <button ion-button icon-only>\n        <ion-icon name="md-flag" color="danger"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content #content padding>\n  \n\n  <div class="chat-list" *ngIf="!isNewMatch || messages.length">\n    <div class="chat-item" *ngFor="let item of messages" [ngClass]="{\'me\': item.isMe}">\n      <div class="chat-timestamp">\n        {{item.timestamp}}\n      </div>\n\n      <div class="chat-item-content">\n        <div class="chat-avatar" *ngIf="!item.isMe">\n          <img [src]="item.avatar">\n        </div>\n\n        <div class="chat-item-bubble" [ngClass]="{\'bubble-image\': item.type == \'image\'}">\n          <i class="icon-tail"></i>\n          <div class="chat-body" *ngIf="item.type !== \'image\'" [innerHtml]="item.body | nlbr"></div>\n          <img [src]="item.body" *ngIf="item.type == \'image\'">\n        </div>\n\n        <div class="chat-item-reaction" *ngIf="!item.isMe && item.type == \'image\'">\n          <ion-icon name="md-heart-outline" class="text-muted"></ion-icon>\n        </div>\n      </div>\n\n      <div class="chat-item-status" *ngIf="item.isMe">Sent</div>\n    </div>\n  </div>\n</ion-content>\n\n<ion-footer no-border [keyboardAttach]="content">\n  <giphy *ngIf="showGiphy" (onSelect)="sendGif($event)" (onClose)="toggleGiphy()"></giphy>\n\n  <ion-toolbar class="has-elastic-input giphy-input" *ngIf="!showGiphy">\n    <ion-buttons left align-self-bottom class="stick-bottom">\n      <button ion-button small class="button-gif" (click)="toggleGiphy()">\n        GIF\n      </button>\n    </ion-buttons>\n    <ion-textarea fz-elastic [(ngModel)]="typingMessage" placeholder="Type a message"></ion-textarea>\n    <ion-buttons right class="stick-bottom button-submit">\n      <button type="submit" [disabled]="typingMessage.length == 0" ion-button small color="dark" (tap)="sendText(typingMessage)">\n        Send\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/chat/chat.html"*/,
+=======
+        selector: 'page-chat',template:/*ion-inline-start:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/pages/chat/chat.html"*/'<ion-header no-border class="header-shadow">\n  <ion-navbar color="white">\n    <ion-title>\n      <div class="avatar-title">\n        <demo-avatar [sizeClass]="\'thumb-xs\'"></demo-avatar>\n        <div class="avatar-name">Tindie</div>\n      </div>\n    </ion-title>\n\n    <ion-buttons end>\n      <button ion-button icon-only>\n        <ion-icon name="md-flag" color="danger"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content #content padding>\n  <div class="wrapper text-center h-full" layout vertical center center-center *ngIf="isNewMatch && messages.length == 0">\n    <div>\n      <div class="m-b">\n        <div class="text-lg">You matched with <b>Tindie</b></div>\n        <div>3 hours ago</div>\n      </div>\n      <div class="m-b">\n        <demo-avatar [sizeClass]="\'thumb-xl\'"></demo-avatar>\n      </div>\n      <div class="text-lg">Are your hands tied or something?</div>\n    </div>\n  </div>\n\n  <div class="chat-list" *ngIf="!isNewMatch || messages.length">\n    <div class="chat-item" *ngFor="let item of messages" [ngClass]="{\'me\': item.isMe}">\n      <div class="chat-timestamp">\n        {{item.timestamp}}\n      </div>\n\n      <div class="chat-item-content">\n        <div class="chat-avatar" *ngIf="!item.isMe">\n          <img [src]="item.avatar">\n        </div>\n\n        <div class="chat-item-bubble" [ngClass]="{\'bubble-image\': item.type == \'image\'}">\n          <i class="icon-tail"></i>\n          <div class="chat-body" *ngIf="item.type !== \'image\'" [innerHtml]="item.body | nlbr"></div>\n          <img [src]="item.body" *ngIf="item.type == \'image\'">\n        </div>\n\n        <div class="chat-item-reaction" *ngIf="!item.isMe && item.type == \'image\'">\n          <ion-icon name="md-heart-outline" class="text-muted"></ion-icon>\n        </div>\n      </div>\n\n      <div class="chat-item-status" *ngIf="item.isMe">Sent</div>\n    </div>\n  </div>\n</ion-content>\n\n<ion-footer no-border [keyboardAttach]="content">\n  <giphy *ngIf="showGiphy" (onSelect)="sendGif($event)" (onClose)="toggleGiphy()"></giphy>\n\n  <ion-toolbar class="has-elastic-input giphy-input" *ngIf="!showGiphy">\n    <ion-buttons left align-self-bottom class="stick-bottom">\n      <button ion-button small class="button-gif" (click)="toggleGiphy()">\n        GIF\n      </button>\n    </ion-buttons>\n    <ion-textarea fz-elastic [(ngModel)]="typingMessage" placeholder="Type a message"></ion-textarea>\n    <ion-buttons right class="stick-bottom button-submit">\n      <button type="submit" [disabled]="typingMessage.length == 0" ion-button small color="dark" (tap)="sendText(typingMessage)">\n        Send\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/pages/chat/chat.html"*/,
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
 ], ChatPage);
@@ -184,7 +188,11 @@ var MatchedPage = (function () {
 }());
 MatchedPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+<<<<<<< HEAD
         selector: 'page-matched',template:/*ion-inline-start:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/matched/matched.html"*/'<ion-content padding no-bounce class="bg-blur">\n  <div class="h-full" layout vertical center center-center>\n    <div>\n      <div class="text-2x">It\'s a Match!</div>\n      <p class="text-lg">You and A Person have liked <br> each other.</p>\n    </div>\n    <div>\n      <div class="thumb-xl match-avatar match-left">\n        <img class="rounded b b-2x b-white box-shadow" src="assets/img/hieu.png" alt="">\n      </div>\n      <div class="thumb-xl match-avatar match-right">\n        <img class="rounded b b-2x b-white box-shadow" src="assets/img/icon.png" alt="">\n      </div>\n    </div>\n\n    <div>\n      <button ion-button round class="btn-gd m-b" (click)="close()">SEND MESSAGE</button>\n      <button ion-button round class="btn-outline" outline (click)="close()">KEEP SWING</button>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/matched/matched.html"*/,
+=======
+        selector: 'page-matched',template:/*ion-inline-start:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/pages/matched/matched.html"*/'<ion-content padding no-bounce class="bg-blur">\n  <div class="h-full" layout vertical center center-center>\n    <div>\n      <div class="text-2x">It\'s a Match!</div>\n      <p class="text-lg">You and A Person have liked <br> each other.</p>\n    </div>\n    <div>\n      <div class="thumb-xl match-avatar match-left">\n        <img class="rounded b b-2x b-white box-shadow" src="assets/img/hieu.png" alt="">\n      </div>\n      <div class="thumb-xl match-avatar match-right">\n        <img class="rounded b b-2x b-white box-shadow" src="assets/img/icon.png" alt="">\n      </div>\n    </div>\n\n    <div>\n      <button ion-button round class="btn-gd m-b" (click)="close()">SEND MESSAGE</button>\n      <button ion-button round class="btn-outline" outline (click)="close()">KEEP SWING</button>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/pages/matched/matched.html"*/,
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ViewController */]])
 ], MatchedPage);
@@ -200,7 +208,11 @@ MatchedPage = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__explore_explore__ = __webpack_require__(69);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__explore_explore__ = __webpack_require__(68);
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__profile_profile__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__profile_edit_profile_edit__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__settings_settings__ = __webpack_require__(144);
@@ -264,7 +276,11 @@ __decorate([
 ], MePage.prototype, "slides", void 0);
 MePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+<<<<<<< HEAD
         selector: 'page-me',template:/*ion-inline-start:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/me/me.html"*/'<ion-header no-border>\n  <ion-navbar color="white" hideBackButton>\n    <ion-title>\n      <button ion-button icon-only clear>\n        <ion-icon name="md-person" color="danger"></ion-icon>\n      </button>\n    </ion-title>\n\n    <ion-buttons end>\n      <button ion-button clear (click)="goToExplore()">\n        <img src="assets/img/logo_bw.png" width="24" alt="">\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content no-bounce class="bg-custom">\n  <div layout vertical>\n    <div flex three class="bg-white">\n      <div class="wrapper text-center">\n        <div class="big-thumb" (click)="openProfile()">\n          <img src="assets/img/hieu.png" class="rounded box-shadow" alt="">\n        </div>\n        <div class="text-2x">Hieu, 29</div>\n        <div class="">Front-end dev. UX/UI lover</div>\n      </div>\n\n      <div>\n        <ion-grid>\n          <ion-row>\n            <ion-col col-6 class="text-center b-r b-light">\n              <button ion-button icon-only color="light" class="button-muted" (click)="openSettings()">\n                <ion-icon name="md-settings"></ion-icon>\n              </button>\n              <div class="text-muted text-xs l-s-1x m-t-xs">SETTINGS</div>\n            </ion-col>\n            <ion-col col-6 class="text-center">\n              <button ion-button icon-only color="light" class="button-muted" (click)="openProfileEdit()">\n                <ion-icon name="md-create"></ion-icon>\n              </button>\n              <div class="text-muted text-xs l-s-1x m-t-xs">EDIT INFO</div>\n            </ion-col>\n          </ion-row>\n        </ion-grid>\n      </div>\n    </div>\n\n    <div flex two class="me-bottom-bg">\n      <div class="oval"></div>\n\n      <ion-slides pager class="bottom-slides" autoplay="3000" (ionSlideDidChange)="slideChanged()">\n        <ion-slide>\n          <div class="slide-title">\n            <ion-icon name="md-flame" color="gold"></ion-icon>\n            Get Tinder Gold\n          </div>\n          <p>See who Likes You & more</p>\n        </ion-slide>\n        <ion-slide>\n          <div class="slide-title">\n            <ion-icon name="ios-flash" color="superlike"></ion-icon>\n            Get Matches Faster\n          </div>\n          <p>Boost your profile once a month</p>\n        </ion-slide>\n        <ion-slide>\n          <div class="slide-title">\n            <ion-icon name="md-star" color="star"></ion-icon>\n            Stand Out with Super Likes\n          </div>\n          <p>You\'re 3x more likely to get a match!</p>\n        </ion-slide>\n        <ion-slide>\n          <div class="slide-title">\n            <ion-icon name="md-pin" color="superlike"></ion-icon>\n            Swipe Around The World\n          </div>\n          <p>Passport to anywhere with Tinder Plus!</p>\n        </ion-slide>\n      </ion-slides>\n\n      <div class="wrapper text-center">\n        <button *ngIf="currentSlideIndex == 0" ion-button color="light" class="btn-default" (click)="openTinderPlus()">\n          <span ion-text color="gold">GET TINDER GOLD</span>\n        </button>\n\n        <button *ngIf="currentSlideIndex != 0" ion-button color="light" class="btn-default" (click)="openTinderPlus()">\n          MY TINDER PLUS\n        </button>\n      </div>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/me/me.html"*/,
+=======
+        selector: 'page-me',template:/*ion-inline-start:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/pages/me/me.html"*/'<ion-header no-border>\n  <ion-navbar color="white" hideBackButton>\n    <ion-title>\n      <button ion-button icon-only clear>\n        <ion-icon name="md-person" color="danger"></ion-icon>\n      </button>\n    </ion-title>\n\n    <ion-buttons end>\n      <button ion-button clear (click)="goToExplore()">\n        <img src="assets/img/logo_bw.png" width="24" alt="">\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content no-bounce class="bg-custom">\n  <div layout vertical>\n    <div flex three class="bg-white">\n      <div class="wrapper text-center">\n        <div class="big-thumb" (click)="openProfile()">\n          <img src="assets/img/hieu.png" class="rounded box-shadow" alt="">\n        </div>\n        <div class="text-2x">Hieu, 29</div>\n        <div class="">Front-end dev. UX/UI lover</div>\n      </div>\n\n      <div>\n        <ion-grid>\n          <ion-row>\n            <ion-col col-6 class="text-center b-r b-light">\n              <button ion-button icon-only color="light" class="button-muted" (click)="openSettings()">\n                <ion-icon name="md-settings"></ion-icon>\n              </button>\n              <div class="text-muted text-xs l-s-1x m-t-xs">SETTINGS</div>\n            </ion-col>\n            <ion-col col-6 class="text-center">\n              <button ion-button icon-only color="light" class="button-muted" (click)="openProfileEdit()">\n                <ion-icon name="md-create"></ion-icon>\n              </button>\n              <div class="text-muted text-xs l-s-1x m-t-xs">EDIT INFO</div>\n            </ion-col>\n          </ion-row>\n        </ion-grid>\n      </div>\n    </div>\n\n    <div flex two class="me-bottom-bg">\n      <div class="oval"></div>\n\n      <ion-slides pager class="bottom-slides" autoplay="3000" (ionSlideDidChange)="slideChanged()">\n        <ion-slide>\n          <div class="slide-title">\n            <ion-icon name="md-flame" color="gold"></ion-icon>\n            Get Tinder Gold\n          </div>\n          <p>See who Likes You & more</p>\n        </ion-slide>\n        <ion-slide>\n          <div class="slide-title">\n            <ion-icon name="ios-flash" color="superlike"></ion-icon>\n            Get Matches Faster\n          </div>\n          <p>Boost your profile once a month</p>\n        </ion-slide>\n        <ion-slide>\n          <div class="slide-title">\n            <ion-icon name="md-star" color="star"></ion-icon>\n            Stand Out with Super Likes\n          </div>\n          <p>You\'re 3x more likely to get a match!</p>\n        </ion-slide>\n        <ion-slide>\n          <div class="slide-title">\n            <ion-icon name="md-pin" color="superlike"></ion-icon>\n            Swipe Around The World\n          </div>\n          <p>Passport to anywhere with Tinder Plus!</p>\n        </ion-slide>\n      </ion-slides>\n\n      <div class="wrapper text-center">\n        <button *ngIf="currentSlideIndex == 0" ion-button color="light" class="btn-default" (click)="openTinderPlus()">\n          <span ion-text color="gold">GET TINDER GOLD</span>\n        </button>\n\n        <button *ngIf="currentSlideIndex != 0" ion-button color="light" class="btn-default" (click)="openTinderPlus()">\n          MY TINDER PLUS\n        </button>\n      </div>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/pages/me/me.html"*/,
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */]])
 ], MePage);
@@ -280,7 +296,11 @@ MePage = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MessagingPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__explore_explore__ = __webpack_require__(69);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__explore_explore__ = __webpack_require__(68);
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__chat_chat__ = __webpack_require__(140);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -316,7 +336,11 @@ var MessagingPage = (function () {
 }());
 MessagingPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+<<<<<<< HEAD
         selector: 'page-messaging',template:/*ion-inline-start:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/messaging/messaging.html"*/'<ion-header no-border>\n  <ion-navbar color="white" hideBackButton>\n    <ion-buttons start>\n      <button ion-button clear (click)="goToExplore()">\n        <img src="assets/img/logo_bw.png" width="24" alt="">\n      </button>\n    </ion-buttons>\n    <ion-title>\n      <button ion-button icon-only clear>\n        <ion-icon name="menu" color="danger"></ion-icon>\n      </button>\n    </ion-title>\n  </ion-navbar>\n\n  <ion-toolbar color="white">\n    <ion-searchbar placeholder="Search Matches"></ion-searchbar>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n  <div>\n    <div class="wrapper-xs padder">\n      <div ion-text color="danger" class="font-bold">\n        Matches\n      </div>\n    </div>\n    <div class="wrapper-xs padder-sm">\n      <ion-row align-items-center (click)="goToChat()">\n        <ion-col col-auto>\n          <demo-avatar [sizeClass]="\'thumb-md\'"></demo-avatar>\n        </ion-col>\n        <ion-col>\n          <div>\n            <div class="text-lg">Waifu Match</div>\n            <div class="text-muted">Mecha, Action adventure</div>\n          </div>\n        </ion-col>\n      </ion-row>\n      <ion-row align-items-center (click)="goToChat()">\n        <ion-col col-auto>\n          <demo-avatar [sizeClass]="\'thumb-md\'"></demo-avatar>\n        </ion-col>\n        <ion-col>\n          <div>\n            <div class="text-lg">Another Match</div>\n            <div class="text-muted">Comedy, fantasy</div>\n          </div>\n        </ion-col>\n      </ion-row>\n    </div>\n  </div>\n\n</ion-content>\n'/*ion-inline-end:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/messaging/messaging.html"*/,
+=======
+        selector: 'page-messaging',template:/*ion-inline-start:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/pages/messaging/messaging.html"*/'<ion-header no-border>\n  <ion-navbar color="white" hideBackButton>\n    <ion-buttons start>\n      <button ion-button clear (click)="goToExplore()">\n        <img src="assets/img/logo_bw.png" width="24" alt="">\n      </button>\n    </ion-buttons>\n    <ion-title>\n      <button ion-button icon-only clear>\n        <ion-icon name="ios-chatbubbles" color="danger"></ion-icon>\n      </button>\n    </ion-title>\n  </ion-navbar>\n\n  <ion-toolbar color="white">\n    <ion-searchbar placeholder="Search Matches"></ion-searchbar>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <div>\n    <div class="wrapper-xs padder">\n      <div ion-text color="danger" class="font-bold">\n        New Matches\n        <ion-badge color="danger">1</ion-badge>\n      </div>\n    </div>\n    <div class="wrapper-xs padder matches-thumbs">\n      <ion-scroll scrollX="true">\n        <div class="thumbs-wrapper">\n          <div class="matches-thumb" *ngFor="let i of [0,1,2,3,4,5,6]" (click)="goToChat(true)">\n            <demo-avatar [sizeClass]="\'thumb-md\'"></demo-avatar>\n            <div class="online-status"></div>\n            <div class="text-center text-ellipsis">Tindie</div>\n          </div>\n        </div>\n      </ion-scroll>\n    </div>\n  </div>\n\n  <div>\n    <div class="wrapper-xs padder">\n      <div ion-text color="danger" class="font-bold">\n        Messages\n      </div>\n    </div>\n    <div class="wrapper-xs padder-sm">\n      <ion-row align-items-center (click)="goToChat()">\n        <ion-col col-auto>\n          <demo-avatar [sizeClass]="\'thumb-md\'"></demo-avatar>\n        </ion-col>\n        <ion-col>\n          <div>\n            <div class="text-lg">Tinder Match</div>\n            <div class="text-muted">Sent you a GIPHY</div>\n          </div>\n        </ion-col>\n      </ion-row>\n      <ion-row align-items-center (click)="goToChat()">\n        <ion-col col-auto>\n          <demo-avatar [sizeClass]="\'thumb-md\'"></demo-avatar>\n        </ion-col>\n        <ion-col>\n          <div>\n            <div class="text-lg">Another Match</div>\n            <div class="text-muted">Sent you a GIPHY</div>\n          </div>\n        </ion-col>\n      </ion-row>\n    </div>\n  </div>\n\n</ion-content>\n'/*ion-inline-end:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/pages/messaging/messaging.html"*/,
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
 ], MessagingPage);
@@ -367,7 +391,11 @@ var SettingsPage = (function () {
 }());
 SettingsPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+<<<<<<< HEAD
         selector: 'page-settings',template:/*ion-inline-start:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/settings/settings.html"*/'<ion-header no-border>\n  <ion-navbar color="white">\n    <ion-title>Settings</ion-title>\n\n    <ion-buttons end>\n      <button ion-button clear color="danger" (click)="close()">\n        Done\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content class="bg-custom">\n  <ion-card class="card-custom text-center wrapper">\n    <div class="text-xl font-bold">\n      <ion-icon name="md-flame" color="gold"></ion-icon>\n      tinder\n      <span class="text-xs" ion-text color="gold">GOLD</span>\n    </div>\n    <div color="muted" ion-text>\n      Unlock Our Most Exclusive Features\n    </div>\n  </ion-card>\n\n  <ion-card class="card-custom text-center wrapper">\n    <div class="text-xl font-bold">\n      <ion-icon name="md-flame" color="danger"></ion-icon>\n      tinder\n      <span ion-text color="danger">+</span>\n    </div>\n    <div color="muted" ion-text>\n      Unlimited Likes & More!\n    </div>\n  </ion-card>\n\n  <ion-row>\n    <ion-col col-6>\n      <div class="card-custom text-center wrapper-sm m-l-sm">\n        <button ion-button color="white" class="button-superlike">\n          <ion-icon name="ios-flash" color="superlike"></ion-icon>\n        </button>\n        <div class="font-bold" ion-text color="superlike">\n          Get Boosts\n        </div>\n      </div>\n    </ion-col>\n    <ion-col col-6>\n      <div class="card-custom text-center wrapper-sm m-r-sm">\n        <button ion-button color="white" class="button-star">\n          <ion-icon name="md-star" color="star"></ion-icon>\n        </button>\n        <div class="font-bold" ion-text color="star">\n          Get Super Likes\n        </div>\n      </div>\n    </ion-col>\n  </ion-row>\n\n  <ion-list>\n    <ion-list-header>\n      DISCOVERY SETTINGS\n    </ion-list-header>\n    <button ion-item>\n      Location\n      <ion-note item-end>\n        My Current Location\n        <br>\n        <span class="text-xs">Singapore</span>\n      </ion-note>\n    </button>\n    <ion-item class="line-merge-down">\n      Maximum Distance\n      <ion-note item-end>\n        {{distance}}km\n      </ion-note>\n    </ion-item>\n    <ion-item>\n      <ion-range min="2" max="160" [(ngModel)]="distance" color="danger"></ion-range>\n    </ion-item>\n    <button ion-item>\n      Gender\n      <ion-note item-end>\n        Women\n      </ion-note>\n    </button>\n    <ion-item class="line-merge-down">\n      Age Range\n      <ion-note item-end>\n        {{ageRange.lower}}-{{ageRange.upper}}\n      </ion-note>\n    </ion-item>\n    <ion-item>\n      <ion-range dualKnobs="true" [(ngModel)]="ageRange" min="18" max="65" color="danger"></ion-range>\n    </ion-item>\n  </ion-list>\n\n  <ion-list no-lines>\n    <ion-item>\n      <ion-label>Show me on Tinder</ion-label>\n      <ion-toggle color="danger" checked="true"></ion-toggle>\n    </ion-item>\n    <div class="padder text-muted text-xs m-t-xs">\n      While turned off, you will not be shown in the card stack. You can still see and chat with your matches.\n    </div>\n  </ion-list>\n\n  <ion-list no-lines>\n    <ion-list-header>\n      WEB PROFILE\n    </ion-list-header>\n    <button ion-item>\n      Username\n      <ion-note item-end>\n        Claim yours\n      </ion-note>\n    </button>\n    <div class="padder text-muted text-xs m-t-xs">\n      Create a public Username. Share your Username. Have people all over the world swipe you on Tinder.\n    </div>\n  </ion-list>\n\n  <ion-list>\n    <ion-list-header>\n      NOTIFICATIONS\n    </ion-list-header>\n    <ion-item>\n      <ion-label>New Matches</ion-label>\n      <ion-toggle color="danger" checked="true"></ion-toggle>\n    </ion-item>\n    <ion-item>\n      <ion-label>Messages</ion-label>\n      <ion-toggle color="danger" checked="true"></ion-toggle>\n    </ion-item>\n    <ion-item>\n      <ion-label>Message Likes</ion-label>\n      <ion-toggle color="danger" checked="true"></ion-toggle>\n    </ion-item>\n    <ion-item>\n      <ion-label>Super Likes</ion-label>\n      <ion-toggle color="danger" checked="true"></ion-toggle>\n    </ion-item>\n    <ion-item>\n      <ion-label>In-App Vibrations</ion-label>\n      <ion-toggle color="danger" checked="false"></ion-toggle>\n    </ion-item>\n    <ion-item>\n      <ion-label>In-App Sounds</ion-label>\n      <ion-toggle color="danger" checked="true"></ion-toggle>\n    </ion-item>\n  </ion-list>\n\n  <ion-list no-lines>\n    <ion-item text-center class="m-b-sm">\n      Restore Purchases\n    </ion-item>\n    <ion-item text-center>\n      Share Tinder\n    </ion-item>\n  </ion-list>\n\n  <ion-list no-lines>\n    <ion-list-header>\n      CONTACT US\n    </ion-list-header>\n    <button ion-item>\n      Help & Support\n    </button>\n  </ion-list>\n\n  <ion-list no-lines>\n    <ion-list-header>\n      COMMUNITY\n    </ion-list-header>\n    <button ion-item>\n      Community Guidelines\n    </button>\n    <button ion-item>\n      Safety Tips\n    </button>\n  </ion-list>\n\n  <ion-list no-lines>\n    <ion-list-header>\n      LEGAL\n    </ion-list-header>\n    <button ion-item>\n      Privacy Policy\n    </button>\n    <button ion-item>\n      Terms of Service\n    </button>\n    <button ion-item>\n      Licenses\n    </button>\n  </ion-list>\n\n  <ion-list no-lines>\n    <ion-item text-center class="m-b-sm">\n      Log Out\n    </ion-item>\n    <div class="text-center m-b">\n      <div class="thumb-sm">\n        <img src="assets/img/logo.png" alt="">\n      </div>\n      <div>Version 8.4.0</div>\n    </div>\n    <ion-item text-center>\n      Delete Account\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/settings/settings.html"*/,
+=======
+        selector: 'page-settings',template:/*ion-inline-start:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/pages/settings/settings.html"*/'<ion-header no-border>\n  <ion-navbar color="white">\n    <ion-title>Settings</ion-title>\n\n    <ion-buttons end>\n      <button ion-button clear color="danger" (click)="close()">\n        Done\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content class="bg-custom">\n  <ion-card class="card-custom text-center wrapper">\n    <div class="text-xl font-bold">\n      <ion-icon name="md-flame" color="gold"></ion-icon>\n      tinder\n      <span class="text-xs" ion-text color="gold">GOLD</span>\n    </div>\n    <div color="muted" ion-text>\n      Unlock Our Most Exclusive Features\n    </div>\n  </ion-card>\n\n  <ion-card class="card-custom text-center wrapper">\n    <div class="text-xl font-bold">\n      <ion-icon name="md-flame" color="danger"></ion-icon>\n      tinder\n      <span ion-text color="danger">+</span>\n    </div>\n    <div color="muted" ion-text>\n      Unlimited Likes & More!\n    </div>\n  </ion-card>\n\n  <ion-row>\n    <ion-col col-6>\n      <div class="card-custom text-center wrapper-sm m-l-sm">\n        <button ion-button color="white" class="button-superlike">\n          <ion-icon name="ios-flash" color="superlike"></ion-icon>\n        </button>\n        <div class="font-bold" ion-text color="superlike">\n          Get Boosts\n        </div>\n      </div>\n    </ion-col>\n    <ion-col col-6>\n      <div class="card-custom text-center wrapper-sm m-r-sm">\n        <button ion-button color="white" class="button-star">\n          <ion-icon name="md-star" color="star"></ion-icon>\n        </button>\n        <div class="font-bold" ion-text color="star">\n          Get Super Likes\n        </div>\n      </div>\n    </ion-col>\n  </ion-row>\n\n  <ion-list>\n    <ion-list-header>\n      DISCOVERY SETTINGS\n    </ion-list-header>\n    <button ion-item>\n      Location\n      <ion-note item-end>\n        My Current Location\n        <br>\n        <span class="text-xs">Singapore</span>\n      </ion-note>\n    </button>\n    <ion-item class="line-merge-down">\n      Maximum Distance\n      <ion-note item-end>\n        {{distance}}km\n      </ion-note>\n    </ion-item>\n    <ion-item>\n      <ion-range min="2" max="160" [(ngModel)]="distance" color="danger"></ion-range>\n    </ion-item>\n    <button ion-item>\n      Gender\n      <ion-note item-end>\n        Women\n      </ion-note>\n    </button>\n    <ion-item class="line-merge-down">\n      Age Range\n      <ion-note item-end>\n        {{ageRange.lower}}-{{ageRange.upper}}\n      </ion-note>\n    </ion-item>\n    <ion-item>\n      <ion-range dualKnobs="true" [(ngModel)]="ageRange" min="18" max="65" color="danger"></ion-range>\n    </ion-item>\n  </ion-list>\n\n  <ion-list no-lines>\n    <ion-item>\n      <ion-label>Show me on Tinder</ion-label>\n      <ion-toggle color="danger" checked="true"></ion-toggle>\n    </ion-item>\n    <div class="padder text-muted text-xs m-t-xs">\n      While turned off, you will not be shown in the card stack. You can still see and chat with your matches.\n    </div>\n  </ion-list>\n\n  <ion-list no-lines>\n    <ion-list-header>\n      WEB PROFILE\n    </ion-list-header>\n    <button ion-item>\n      Username\n      <ion-note item-end>\n        Claim yours\n      </ion-note>\n    </button>\n    <div class="padder text-muted text-xs m-t-xs">\n      Create a public Username. Share your Username. Have people all over the world swipe you on Tinder.\n    </div>\n  </ion-list>\n\n  <ion-list>\n    <ion-list-header>\n      NOTIFICATIONS\n    </ion-list-header>\n    <ion-item>\n      <ion-label>New Matches</ion-label>\n      <ion-toggle color="danger" checked="true"></ion-toggle>\n    </ion-item>\n    <ion-item>\n      <ion-label>Messages</ion-label>\n      <ion-toggle color="danger" checked="true"></ion-toggle>\n    </ion-item>\n    <ion-item>\n      <ion-label>Message Likes</ion-label>\n      <ion-toggle color="danger" checked="true"></ion-toggle>\n    </ion-item>\n    <ion-item>\n      <ion-label>Super Likes</ion-label>\n      <ion-toggle color="danger" checked="true"></ion-toggle>\n    </ion-item>\n    <ion-item>\n      <ion-label>In-App Vibrations</ion-label>\n      <ion-toggle color="danger" checked="false"></ion-toggle>\n    </ion-item>\n    <ion-item>\n      <ion-label>In-App Sounds</ion-label>\n      <ion-toggle color="danger" checked="true"></ion-toggle>\n    </ion-item>\n  </ion-list>\n\n  <ion-list no-lines>\n    <ion-item text-center class="m-b-sm">\n      Restore Purchases\n    </ion-item>\n    <ion-item text-center>\n      Share Tinder\n    </ion-item>\n  </ion-list>\n\n  <ion-list no-lines>\n    <ion-list-header>\n      CONTACT US\n    </ion-list-header>\n    <button ion-item>\n      Help & Support\n    </button>\n  </ion-list>\n\n  <ion-list no-lines>\n    <ion-list-header>\n      COMMUNITY\n    </ion-list-header>\n    <button ion-item>\n      Community Guidelines\n    </button>\n    <button ion-item>\n      Safety Tips\n    </button>\n  </ion-list>\n\n  <ion-list no-lines>\n    <ion-list-header>\n      LEGAL\n    </ion-list-header>\n    <button ion-item>\n      Privacy Policy\n    </button>\n    <button ion-item>\n      Terms of Service\n    </button>\n    <button ion-item>\n      Licenses\n    </button>\n  </ion-list>\n\n  <ion-list no-lines>\n    <ion-item text-center class="m-b-sm">\n      Log Out\n    </ion-item>\n    <div class="text-center m-b">\n      <div class="thumb-sm">\n        <img src="assets/img/logo.png" alt="">\n      </div>\n      <div>Version 8.4.0</div>\n    </div>\n    <ion-item text-center>\n      Delete Account\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/pages/settings/settings.html"*/,
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ViewController */]])
 ], SettingsPage);
@@ -416,7 +444,11 @@ var TinderPlusPage = (function () {
 }());
 TinderPlusPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+<<<<<<< HEAD
         selector: 'page-tinder-plus',template:/*ion-inline-start:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/tinder-plus/tinder-plus.html"*/'<ion-header no-border class="header-shadow">\n  <ion-navbar color="white">\n    <ion-title>Tinder Plus</ion-title>\n\n    <ion-buttons end>\n      <button ion-button clear color="danger" (click)="close()">\n        Done\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content class="bg-custom">\n  <div class="m-t-sm m-b-sm tinder-plus-banner">\n    <img src="assets/img/plus/tinder_plus_banner.png" alt="">\n    <div class="cta">\n      <div class="text-muted">\n        POWER ON\n      </div>\n      <button ion-button color="danger" round>\n        <b>Get Tinder Plus</b>\n      </button>\n    </div>\n  </div>\n\n  <ion-list class="m-b-sm">\n    <ion-item text-wrap>\n      <ion-thumbnail item-start>\n        <img src="assets/img/plus/tinder_plus_icon_1.png">\n      </ion-thumbnail>\n      <h2>Unlimited Right Swipes</h2>\n      <p>Swipe as much as you like</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <ion-label>\n        Unlimited Likes\n        <p>Give me the ability to like as many people as I want</p>\n      </ion-label>\n      <ion-toggle color="danger" checked="true"></ion-toggle>\n    </ion-item>\n  </ion-list>\n\n  <ion-list class="m-b-sm">\n    <ion-item text-wrap>\n      <ion-thumbnail item-start>\n        <img src="assets/img/plus/tinder_plus_icon_2.png">\n      </ion-thumbnail>\n      <h2>Skip The Line</h2>\n      <p>Be the top profile in your area for 30 minutes to get more matches</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <ion-label>\n        Tinder Boost\n        <p>Give me 1 free Boost every month</p>\n      </ion-label>\n      <ion-toggle color="danger" checked="false"></ion-toggle>\n    </ion-item>\n  </ion-list>\n\n  <ion-list class="m-b-sm">\n    <ion-item text-wrap>\n      <ion-thumbnail item-start>\n        <img src="assets/img/plus/tinder_plus_icon_3.png">\n      </ion-thumbnail>\n      <h2>Control Who You See</h2>\n      <p>It\'s simple now to choose the type of people you want to see on Tinder</p>\n    </ion-item>\n    <ion-item text-wrap>\n      Balanced Recommendations\n      <p>See the most relevant people to you (default setting)</p>\n      <ion-icon item-end color="danger" name="md-checkmark"></ion-icon>\n    </ion-item>\n    <ion-item text-wrap>\n      Recently Active\n      <p>See the most recently active people first</p>\n    </ion-item>\n  </ion-list>\n\n  <ion-list class="m-b-sm">\n    <ion-item text-wrap>\n      <ion-thumbnail item-start>\n        <img src="assets/img/plus/tinder_plus_icon_4.png">\n      </ion-thumbnail>\n      <h2>Control Who Sees You</h2>\n      <p>Only be shown to certain types of people on Tinder</p>\n    </ion-item>\n    <ion-item text-wrap>\n      Standard\n      <p>Only be shown to certain types of people for individual recommendations</p>\n      <ion-icon item-end color="danger" name="md-checkmark"></ion-icon>\n    </ion-item><ion-item text-wrap>\n      Only People I\'ve Liked\n      <p>Only people I\'ve right swiped will see me</p>\n    </ion-item>\n  </ion-list>\n\n  <ion-list>\n    <ion-item text-wrap>\n      <ion-thumbnail item-start>\n        <img src="assets/img/plus/tinder_plus_icon_5.png">\n      </ion-thumbnail>\n      <h2>Passport To Any Location</h2>\n      <p>Match with people all around the world. Paris. Los Angeles. Sydney. Go!</p>\n    </ion-item>\n    <button ion-item>\n      Location\n      <div item-end>Singapore</div>\n    </button>\n  </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/tinder-plus/tinder-plus.html"*/,
+=======
+        selector: 'page-tinder-plus',template:/*ion-inline-start:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/pages/tinder-plus/tinder-plus.html"*/'<ion-header no-border class="header-shadow">\n  <ion-navbar color="white">\n    <ion-title>Tinder Plus</ion-title>\n\n    <ion-buttons end>\n      <button ion-button clear color="danger" (click)="close()">\n        Done\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content class="bg-custom">\n  <div class="m-t-sm m-b-sm tinder-plus-banner">\n    <img src="assets/img/plus/tinder_plus_banner.png" alt="">\n    <div class="cta">\n      <div class="text-muted">\n        POWER ON\n      </div>\n      <button ion-button color="danger" round>\n        <b>Get Tinder Plus</b>\n      </button>\n    </div>\n  </div>\n\n  <ion-list class="m-b-sm">\n    <ion-item text-wrap>\n      <ion-thumbnail item-start>\n        <img src="assets/img/plus/tinder_plus_icon_1.png">\n      </ion-thumbnail>\n      <h2>Unlimited Right Swipes</h2>\n      <p>Swipe as much as you like</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <ion-label>\n        Unlimited Likes\n        <p>Give me the ability to like as many people as I want</p>\n      </ion-label>\n      <ion-toggle color="danger" checked="true"></ion-toggle>\n    </ion-item>\n  </ion-list>\n\n  <ion-list class="m-b-sm">\n    <ion-item text-wrap>\n      <ion-thumbnail item-start>\n        <img src="assets/img/plus/tinder_plus_icon_2.png">\n      </ion-thumbnail>\n      <h2>Skip The Line</h2>\n      <p>Be the top profile in your area for 30 minutes to get more matches</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <ion-label>\n        Tinder Boost\n        <p>Give me 1 free Boost every month</p>\n      </ion-label>\n      <ion-toggle color="danger" checked="false"></ion-toggle>\n    </ion-item>\n  </ion-list>\n\n  <ion-list class="m-b-sm">\n    <ion-item text-wrap>\n      <ion-thumbnail item-start>\n        <img src="assets/img/plus/tinder_plus_icon_3.png">\n      </ion-thumbnail>\n      <h2>Control Who You See</h2>\n      <p>It\'s simple now to choose the type of people you want to see on Tinder</p>\n    </ion-item>\n    <ion-item text-wrap>\n      Balanced Recommendations\n      <p>See the most relevant people to you (default setting)</p>\n      <ion-icon item-end color="danger" name="md-checkmark"></ion-icon>\n    </ion-item>\n    <ion-item text-wrap>\n      Recently Active\n      <p>See the most recently active people first</p>\n    </ion-item>\n  </ion-list>\n\n  <ion-list class="m-b-sm">\n    <ion-item text-wrap>\n      <ion-thumbnail item-start>\n        <img src="assets/img/plus/tinder_plus_icon_4.png">\n      </ion-thumbnail>\n      <h2>Control Who Sees You</h2>\n      <p>Only be shown to certain types of people on Tinder</p>\n    </ion-item>\n    <ion-item text-wrap>\n      Standard\n      <p>Only be shown to certain types of people for individual recommendations</p>\n      <ion-icon item-end color="danger" name="md-checkmark"></ion-icon>\n    </ion-item><ion-item text-wrap>\n      Only People I\'ve Liked\n      <p>Only people I\'ve right swiped will see me</p>\n    </ion-item>\n  </ion-list>\n\n  <ion-list>\n    <ion-item text-wrap>\n      <ion-thumbnail item-start>\n        <img src="assets/img/plus/tinder_plus_icon_5.png">\n      </ion-thumbnail>\n      <h2>Passport To Any Location</h2>\n      <p>Match with people all around the world. Paris. Los Angeles. Sydney. Go!</p>\n    </ion-item>\n    <button ion-item>\n      Location\n      <div item-end>Singapore</div>\n    </button>\n  </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/pages/tinder-plus/tinder-plus.html"*/,
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ViewController */]])
 ], TinderPlusPage);
@@ -430,10 +462,16 @@ TinderPlusPage = __decorate([
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WelcomePage; });
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_native_facebook__ = __webpack_require__(233);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__explore_explore__ = __webpack_require__(69);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__explore_explore__ = __webpack_require__(68);
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -446,6 +484,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+<<<<<<< HEAD
 
 var WelcomePage = (function () {
     function WelcomePage(navCtrl, navParams, app, facebook) {
@@ -466,17 +505,46 @@ var WelcomePage = (function () {
                 title: 'Based on your likes <br /> we find new "Matches!"',
                 image: 'assets/img/intro/intro_3.png'
             },
+=======
+var WelcomePage = (function () {
+    function WelcomePage(navCtrl, navParams, app) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.app = app;
+        this.introSlides = [
+            {
+                title: 'Discover new and interesting <br> people nearby',
+                image: 'assets/img/intro/intro_1.png'
+            },
+            {
+                title: 'Swipe Right to like someone <br /> or Swipe Left to pass',
+                image: 'assets/img/intro/intro_2.png'
+            },
+            {
+                title: 'If they also Swipe Right <br /> then "It\'s a Match!"',
+                image: 'assets/img/intro/intro_3.png'
+            },
+            {
+                title: 'Only people you\'ve matched <br /> with can message you',
+                image: 'assets/img/intro/intro_4.png'
+            }
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
         ];
     }
     WelcomePage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad WelcomePage');
     };
     WelcomePage.prototype.goToSwipe = function () {
+<<<<<<< HEAD
         this.app.getRootNav().setRoot(__WEBPACK_IMPORTED_MODULE_3__explore_explore__["a" /* ExplorePage */])
+=======
+        this.app.getRootNav().setRoot(__WEBPACK_IMPORTED_MODULE_2__explore_explore__["a" /* ExplorePage */])
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
             .then(function () {
             console.log('Welcome to your ExplorePage!');
         });
     };
+<<<<<<< HEAD
     WelcomePage.prototype.loginWithFB = function () {
         var _this = this;
         this.facebook.login(['email', 'public_profile']).then(function (response) {
@@ -496,6 +564,19 @@ WelcomePage = __decorate([
         selector: 'page-welcome',template:/*ion-inline-start:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/welcome/welcome.html"*/'<ion-content padding>\n  <div layout vertical center>\n    <ion-slides #slides pager flex>\n      <ion-slide *ngFor="let slide of introSlides">\n        <h3 class="font-thin" [innerHTML]="slide.title"></h3>\n        <img [src]="slide.image">\n      </ion-slide>\n    </ion-slides>\n\n    <div class="text-center">\n      <div>\n        <button ion-button round class="btn-tinder-login m-b-sm" (click)="loginWithFB()">LOG IN WITH FACEBOOK</button>\n\n        <ion-card *ngIf="userData">\n          <ion-card-header>{{ userData.username }}</ion-card-header>\n          <img [src]="userData.picture" />\n          <ion-card-content>\n            <p>Email: {{ userData.email }}</p>\n            <p>First Name: {{ userData.first_name }}</p>\n          </ion-card-content>\n        </ion-card>\n      </div>\n\n\n      <div class="wrapper text-muted">\n        <p>We don\'t post anything to Facebook.\n          <br> By signing in, you agree to our <span class="text-u-l">Terms of Service</span> and <span class="text-u-l">Privacy Policy</span>\n        </p>\n      </div>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/welcome/welcome.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* App */], __WEBPACK_IMPORTED_MODULE_0__ionic_native_facebook__["a" /* Facebook */]])
+=======
+    return WelcomePage;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('slides'),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Slides */])
+], WelcomePage.prototype, "slides", void 0);
+WelcomePage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'page-welcome',template:/*ion-inline-start:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/pages/welcome/welcome.html"*/'<ion-content padding>\n  <div layout vertical center>\n    <ion-slides #slides pager flex>\n      <ion-slide *ngFor="let slide of introSlides">\n        <h3 class="font-thin" [innerHTML]="slide.title"></h3>\n        <img [src]="slide.image">\n      </ion-slide>\n    </ion-slides>\n\n    <div class="text-center">\n      <div>\n        <button ion-button round class="btn-tinder-login m-b-sm" (click)="goToSwipe()">LOG IN WITH FACEBOOK</button>\n      </div>\n      <div>\n        <button ion-button round small color="muted" outline (click)="goToSwipe()">LOG IN WITH PHONE NUMBER</button>\n      </div>\n\n      <div class="wrapper text-muted">\n        <p>We don\'t post anything to Facebook.\n          <br>\n          By signing in, you agree to our <span class="text-u-l">Terms of Service</span> and <span class="text-u-l">Privacy Policy</span>\n        </p>\n      </div>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/pages/welcome/welcome.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* App */]])
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 ], WelcomePage);
 
 //# sourceMappingURL=welcome.js.map
@@ -524,6 +605,7 @@ webpackEmptyAsyncContext.id = 157;
 
 var map = {
 	"../pages/chat/chat.module": [
+<<<<<<< HEAD
 		610,
 		9
 	],
@@ -557,6 +639,41 @@ var map = {
 	],
 	"../pages/tinder-plus/tinder-plus.module": [
 		619,
+=======
+		609,
+		9
+	],
+	"../pages/instagram-photo/instagram-photo.module": [
+		610,
+		8
+	],
+	"../pages/matched/matched.module": [
+		611,
+		7
+	],
+	"../pages/me/me.module": [
+		612,
+		6
+	],
+	"../pages/messaging/messaging.module": [
+		613,
+		5
+	],
+	"../pages/profile-edit/profile-edit.module": [
+		614,
+		4
+	],
+	"../pages/profile/profile.module": [
+		615,
+		3
+	],
+	"../pages/settings/settings.module": [
+		616,
+		2
+	],
+	"../pages/tinder-plus/tinder-plus.module": [
+		617,
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 		1
 	],
 	"../pages/welcome/welcome.module": [
@@ -580,7 +697,11 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 276:
+=======
+/***/ 275:
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -642,7 +763,11 @@ __decorate([
 ], InstagramPhotoPage.prototype, "slides", void 0);
 InstagramPhotoPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+<<<<<<< HEAD
         selector: 'instagram-photo',template:/*ion-inline-start:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/instagram-photo/instagram-photo.html"*/'<div>\n  <div class="color-black font-bold text-sm m-b pull-left">1142 Instagram Photos</div>\n  <div class="insta-pager">\n    <div class="bullet" *ngFor="let bullet of slideImages; let i = index" [ngClass]="{active: i == currentSlideIndex}"></div>\n  </div>\n</div>\n\n<ion-slides class="insta-slides" (ionSlideDidChange)="slideChanged()">\n  <ion-slide *ngFor="let slide of slideImages; let i = index">\n    <div *ngFor="let item of slide.page" [style.backgroundImage]="\'url(\' + item.url + \')\'" class="div-img r-3x"></div>\n  </ion-slide>\n</ion-slides>\n'/*ion-inline-end:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/instagram-photo/instagram-photo.html"*/,
+=======
+        selector: 'instagram-photo',template:/*ion-inline-start:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/pages/instagram-photo/instagram-photo.html"*/'<div>\n  <div class="color-black font-bold text-sm m-b pull-left">1142 Instagram Photos</div>\n  <div class="insta-pager">\n    <div class="bullet" *ngFor="let bullet of slideImages; let i = index" [ngClass]="{active: i == currentSlideIndex}"></div>\n  </div>\n</div>\n\n<ion-slides class="insta-slides" (ionSlideDidChange)="slideChanged()">\n  <ion-slide *ngFor="let slide of slideImages; let i = index">\n    <div *ngFor="let item of slide.page" [style.backgroundImage]="\'url(\' + item.url + \')\'" class="div-img r-3x"></div>\n  </ion-slide>\n</ion-slides>\n'/*ion-inline-end:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/pages/instagram-photo/instagram-photo.html"*/,
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
 ], InstagramPhotoPage);
@@ -651,13 +776,22 @@ InstagramPhotoPage = __decorate([
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 277:
+=======
+/***/ 276:
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(278);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(282);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(281);
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -665,7 +799,11 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 282:
+=======
+/***/ 281:
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -673,22 +811,35 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(16);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(600);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(601);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(603);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_image_picker__ = __webpack_require__(232);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_explore_explore__ = __webpack_require__(69);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(599);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(600);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_components_module__ = __webpack_require__(602);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_image_picker__ = __webpack_require__(232);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_explore_explore__ = __webpack_require__(68);
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_welcome_welcome__ = __webpack_require__(146);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_matched_matched__ = __webpack_require__(141);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_me_me__ = __webpack_require__(142);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_profile_profile__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_profile_edit_profile_edit__ = __webpack_require__(81);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_instagram_photo_instagram_photo__ = __webpack_require__(276);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_instagram_photo_instagram_photo__ = __webpack_require__(275);
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_settings_settings__ = __webpack_require__(144);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_messaging_messaging__ = __webpack_require__(143);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_chat_chat__ = __webpack_require__(140);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_tinder_plus_tinder_plus__ = __webpack_require__(145);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_status_bar__ = __webpack_require__(116);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_splash_screen__ = __webpack_require__(273);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_keyboard__ = __webpack_require__(139);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_angular2_swing__ = __webpack_require__(224);
@@ -696,6 +847,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_ng_elastic__ = __webpack_require__(608);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_ng_elastic___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_22_ng_elastic__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ionic_native_facebook__ = __webpack_require__(233);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_splash_screen__ = __webpack_require__(272);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_keyboard__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_angular2_swing__ = __webpack_require__(224);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_angular2_swing___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21_angular2_swing__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_ng_elastic__ = __webpack_require__(607);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_ng_elastic___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_22_ng_elastic__);
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -725,7 +884,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 var AppModule = (function () {
     function AppModule() {
     }
@@ -766,8 +928,13 @@ AppModule = __decorate([
                     { loadChildren: '../pages/profile-edit/profile-edit.module#ProfileEditPageModule', name: 'ProfileEditPage', segment: 'profile-edit', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/settings/settings.module#SettingsPageModule', name: 'SettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] },
+<<<<<<< HEAD
                     { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/tinder-plus/tinder-plus.module#TinderPlusPageModule', name: 'TinderPlusPage', segment: 'tinder-plus', priority: 'low', defaultHistory: [] }
+=======
+                    { loadChildren: '../pages/tinder-plus/tinder-plus.module#TinderPlusPageModule', name: 'TinderPlusPage', segment: 'tinder-plus', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] }
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
                 ]
             }),
         ],
@@ -791,8 +958,12 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_19__ionic_native_splash_screen__["a" /* SplashScreen */],
             __WEBPACK_IMPORTED_MODULE_20__ionic_native_keyboard__["a" /* Keyboard */],
             __WEBPACK_IMPORTED_MODULE_6__ionic_native_image_picker__["a" /* ImagePicker */],
+<<<<<<< HEAD
             { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ErrorHandler"], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicErrorHandler */] },
             __WEBPACK_IMPORTED_MODULE_23__ionic_native_facebook__["a" /* Facebook */]
+=======
+            { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ErrorHandler"], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicErrorHandler */] }
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
         ]
     })
 ], AppModule);
@@ -801,7 +972,11 @@ AppModule = __decorate([
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 600:
+=======
+/***/ 599:
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -809,7 +984,11 @@ AppModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(116);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(273);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(272);
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_keyboard__ = __webpack_require__(139);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_welcome_welcome__ = __webpack_require__(146);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -842,7 +1021,11 @@ var MyApp = (function () {
     return MyApp;
 }());
 MyApp = __decorate([
+<<<<<<< HEAD
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/app/app.html"*/
+=======
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/app/app.html"*/
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_keyboard__["a" /* Keyboard */]])
 ], MyApp);
@@ -851,13 +1034,21 @@ MyApp = __decorate([
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 601:
+=======
+/***/ 600:
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DirectivesModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__keyboard_attach_keyboard_attach__ = __webpack_require__(602);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__keyboard_attach_keyboard_attach__ = __webpack_require__(601);
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -883,7 +1074,11 @@ DirectivesModule = __decorate([
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 602:
+=======
+/***/ 601:
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -996,17 +1191,28 @@ KeyboardAttachDirective = __decorate([
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 603:
+=======
+/***/ 602:
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComponentsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(274);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__demo_avatar_demo_avatar__ = __webpack_require__(604);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__giphy_giphy__ = __webpack_require__(605);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__giphy_nlbr_pipe__ = __webpack_require__(607);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__demo_avatar_demo_avatar__ = __webpack_require__(603);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__giphy_giphy__ = __webpack_require__(604);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__giphy_nlbr_pipe__ = __webpack_require__(606);
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1051,7 +1257,11 @@ ComponentsModule = __decorate([
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 604:
+=======
+/***/ 603:
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1095,7 +1305,11 @@ __decorate([
 ], DemoAvatarComponent.prototype, "sizeClass", void 0);
 DemoAvatarComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+<<<<<<< HEAD
         selector: 'demo-avatar',template:/*ion-inline-start:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/components/demo-avatar/demo-avatar.html"*/'<img class="rounded" [ngClass]="sizeClass" [src]="imageUrl">\n'/*ion-inline-end:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/components/demo-avatar/demo-avatar.html"*/
+=======
+        selector: 'demo-avatar',template:/*ion-inline-start:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/components/demo-avatar/demo-avatar.html"*/'<img class="rounded" [ngClass]="sizeClass" [src]="imageUrl">\n'/*ion-inline-end:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/components/demo-avatar/demo-avatar.html"*/
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
     }),
     __metadata("design:paramtypes", [])
 ], DemoAvatarComponent);
@@ -1104,7 +1318,11 @@ DemoAvatarComponent = __decorate([
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 605:
+=======
+/***/ 604:
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1113,7 +1331,11 @@ DemoAvatarComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_debounceTime__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_debounceTime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_debounceTime__);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__giphy_service__ = __webpack_require__(606);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__giphy_service__ = __webpack_require__(605);
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1178,7 +1400,11 @@ __decorate([
 ], GiphyComponent.prototype, "onClose", void 0);
 GiphyComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+<<<<<<< HEAD
         selector: 'giphy',template:/*ion-inline-start:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/components/giphy/giphy.html"*/'<div class="giphy-component">\n  <div class="giphy-container">\n    <div class="giphy-loading" *ngIf="isGiphyLoading">\n      <ion-spinner></ion-spinner>\n    </div>\n    <ion-scroll scrollX="true" class="scroll-horizontal" *ngIf="!isGiphyLoading">\n      <div class="text-center scroll-item" *ngFor="let gif of gifs" (click)="select(gif)">\n        <img [src]="gif.images.fixed_height_small.url" alt="">\n      </div>\n    </ion-scroll>\n  </div>\n\n  <ion-toolbar>\n    <ion-buttons left (click)="close()">\n      <button ion-button color="danger" class="giphy-close">\n        <ion-icon name="md-close" danger></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-input type="text" [formControl]="queryControl" placeholder="Search for a GIF..."></ion-input>\n  </ion-toolbar>\n</div>\n'/*ion-inline-end:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/components/giphy/giphy.html"*/,
+=======
+        selector: 'giphy',template:/*ion-inline-start:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/components/giphy/giphy.html"*/'<div class="giphy-component">\n  <div class="giphy-container">\n    <div class="giphy-loading" *ngIf="isGiphyLoading">\n      <ion-spinner></ion-spinner>\n    </div>\n    <ion-scroll scrollX="true" class="scroll-horizontal" *ngIf="!isGiphyLoading">\n      <div class="text-center scroll-item" *ngFor="let gif of gifs" (click)="select(gif)">\n        <img [src]="gif.images.fixed_height_small.url" alt="">\n      </div>\n    </ion-scroll>\n  </div>\n\n  <ion-toolbar>\n    <ion-buttons left (click)="close()">\n      <button ion-button color="danger" class="giphy-close">\n        <ion-icon name="md-close" danger></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-input type="text" [formControl]="queryControl" placeholder="Search for a GIF..."></ion-input>\n  </ion-toolbar>\n</div>\n'/*ion-inline-end:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/components/giphy/giphy.html"*/,
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
         providers: [__WEBPACK_IMPORTED_MODULE_3__giphy_service__["a" /* GiphyService */]]
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__giphy_service__["a" /* GiphyService */]])
@@ -1188,13 +1414,21 @@ GiphyComponent = __decorate([
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 606:
+=======
+/***/ 605:
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GiphyService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(274);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(273);
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1241,7 +1475,11 @@ GiphyService = __decorate([
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 607:
+=======
+/***/ 606:
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1278,16 +1516,26 @@ NlbrPipe = __decorate([
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 69:
+=======
+/***/ 68:
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ExplorePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__ = __webpack_require__(302);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash__ = __webpack_require__(75);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__ = __webpack_require__(301);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash__ = __webpack_require__(74);
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_lodash__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular2_swing__ = __webpack_require__(224);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular2_swing___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_angular2_swing__);
@@ -1466,7 +1714,11 @@ __decorate([
 ], ExplorePage.prototype, "swingCards", void 0);
 ExplorePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+<<<<<<< HEAD
         selector: 'page-explore',template:/*ion-inline-start:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/explore/explore.html"*/'<ion-header no-border>\n  <ion-navbar color="white" hideBackButton>\n    <ion-buttons start>\n      <button ion-button icon-only (click)="goToMe()">\n        <ion-icon name="md-person" color="muted"></ion-icon>\n      </button>\n    </ion-buttons>\n\n    <ion-title>\n      <img src="assets/img/logo.png" width="24" alt="">\n    </ion-title>\n\n    <ion-buttons end>\n      <button ion-button icon-only (click)="goToMessaging()">\n        <ion-icon name="menu" color="muted"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="swipe-bg" no-bounce>\n  <div class="h-full no-cards" [hidden]="!isLoading" horizontal layout center center-center>\n    <div class="ripple-container">\n      <div class="thumb-lg ripple-trigger">\n        <img src="assets/img/logo.png" class="rounded b b-2x box-shadow">\n      </div>\n      <div class="ripple-1"></div>\n      <div class="ripple-2"></div>\n    </div>\n  </div>\n\n  <div class="swipe-container" [hidden]="isLoading">\n    <div class="h-full wrapper-sm">\n      <div class="card-stack" swing-stack #cardStack [stackConfig]="stackConfig" (throwoutleft)="disliked(c)" (throwoutright)="liked(c)">\n        <div class="card-item" #card [style.zIndex]="-1 * i" swing-card\n            *ngFor="let c of cards; trackBy: trackByFn; let i = index">\n          <div [style.backgroundImage]="\'url(\' + c.profile_image_url + \')\'" class="div-img h-full r-3x"></div>\n\n          <div class="card-caption" (click)="openProfile(false)">\n            <div class="card-text pull-left">\n              <div class="font-bold text-xl">{{c.name}}, {{c.age}}</div>\n              <div>{{c.job_title}}</div>\n            </div>\n            <div class="pull-right">\n              <ion-icon class="text-2x" name="md-information-circle" color="white"></ion-icon>\n            </div>\n          </div>\n\n          <div class="stamp stamp-like">Interested</div>\n          <div class="stamp stamp-nope">Not Interested</div>\n        </div>\n      </div>\n    </div>\n\n    <div class="bottom-actions" horizontal layout center around-justified>\n      <button ion-button color="white" class="button-hate" (click)="disliked()">\n        <ion-icon name="md-sad"></ion-icon>\n      </button>\n      <button ion-button color="white" class="button-dislike" (click)="disliked()">\n        <ion-icon name="md-close"></ion-icon>\n      </button>\n      <button ion-button color="white" class="button-skip">\n        <ion-icon name="skip-forward"></ion-icon>\n      </button>\n      <button ion-button color="white" class="button-like" (click)="liked()">\n        <ion-icon name="md-checkmark"></ion-icon>\n      </button>\n      <button ion-button color="white" class="button-superlike" (click)="liked()">\n        <ion-icon name="heart"></ion-icon>\n      </button>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/explore/explore.html"*/
+=======
+        selector: 'page-explore',template:/*ion-inline-start:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/pages/explore/explore.html"*/'<ion-header no-border>\n  <ion-navbar color="white" hideBackButton>\n    <ion-buttons start>\n      <button ion-button icon-only (click)="goToMe()">\n        <ion-icon name="md-person" color="muted"></ion-icon>\n      </button>\n    </ion-buttons>\n\n    <ion-title>\n      <img src="assets/img/logo.png" width="24" alt="">\n    </ion-title>\n\n    <ion-buttons end>\n      <button ion-button icon-only (click)="goToMessaging()">\n        <ion-icon name="ios-chatbubbles" color="muted"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="swipe-bg" no-bounce>\n  <div class="h-full no-cards" [hidden]="!isLoading" horizontal layout center center-center>\n    <div class="ripple-container">\n      <div class="thumb-lg ripple-trigger">\n        <img src="assets/img/hieu.png" class="rounded b b-2x box-shadow">\n      </div>\n      <div class="ripple-1"></div>\n      <div class="ripple-2"></div>\n    </div>\n  </div>\n\n  <div class="swipe-container" [hidden]="isLoading">\n    <div class="h-full wrapper-sm">\n      <div class="card-stack" swing-stack #cardStack [stackConfig]="stackConfig" (throwoutleft)="disliked(c)" (throwoutright)="liked(c)">\n        <div class="card-item" #card [style.zIndex]="-1 * i" swing-card\n            *ngFor="let c of cards; trackBy: trackByFn; let i = index">\n          <div [style.backgroundImage]="\'url(\' + c.profile_image_url + \')\'" class="div-img h-full r-3x"></div>\n\n          <div class="card-caption" (click)="openProfile(false)">\n            <div class="card-text pull-left">\n              <div class="font-bold text-xl">{{c.name}}, {{c.age}}</div>\n              <div>{{c.job_title}}</div>\n            </div>\n            <div class="pull-right">\n              <ion-icon class="text-2x" name="md-information-circle" color="white"></ion-icon>\n            </div>\n          </div>\n\n          <div class="stamp stamp-like">Like</div>\n          <div class="stamp stamp-nope">Nope</div>\n        </div>\n      </div>\n    </div>\n\n    <div class="bottom-actions" horizontal layout center around-justified>\n      <button ion-button color="white" class="button-revert" (click)="getMoreCards()">\n        <ion-icon name="md-refresh"></ion-icon>\n      </button>\n      <button ion-button color="white" class="button-dislike" (click)="disliked()">\n        <ion-icon name="md-close"></ion-icon>\n      </button>\n      <button ion-button color="white" class="button-star">\n        <ion-icon name="md-star"></ion-icon>\n      </button>\n      <button ion-button color="white" class="button-like" (click)="liked()">\n        <ion-icon name="md-heart"></ion-icon>\n      </button>\n      <button ion-button color="white" class="button-superlike">\n        <ion-icon name="ios-flash"></ion-icon>\n      </button>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/pages/explore/explore.html"*/
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */]])
 ], ExplorePage);
@@ -1548,7 +1800,11 @@ __decorate([
 ], ProfilePage.prototype, "slides", void 0);
 ProfilePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+<<<<<<< HEAD
         selector: 'page-profile',template:/*ion-inline-start:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/profile/profile.html"*/'<ion-content class="bottom-padding">\n  <div class="header-cover">\n    <div class="slide-pager" layout horizontal center>\n      <div flex class="pager-bullet" *ngFor="let item of slideImages; let i = index" [ngClass]="{active: i == currentSlideIndex}"></div>\n    </div>\n\n    <ion-slides (ionSlideDidChange)="slideChanged()">\n      <ion-slide *ngFor="let item of slideImages; let i = index">\n        <div [style.backgroundImage]="\'url(\' + item.url + \')\'" class="div-img"></div>\n      </ion-slide>\n    </ion-slides>\n    <button ion-button icon-button color="danger" round class="btn-rounded btn-fab" (click)="close()">\n      <ion-icon name="md-arrow-round-down"></ion-icon>\n    </button>\n  </div>\n\n  <div class="wrapper b-b b-light">\n    <div class="text-xl m-b-sm">\n      <span class="font-bold">Hieu Pham</span>, 29\n    </div>\n    <div class="text-muted l-h text-xs">\n      <ion-icon name="ios-briefcase-outline"></ion-icon>\n      Front-End, UX/UI lover\n      <br>\n      <ion-icon name="ios-pin-outline" class="m-r-xs"></ion-icon>\n      less than a kilometer away\n    </div>\n  </div>\n\n  <div class="wrapper text-muted b-b b-light">\n    A UX/UI lover who has a hobby of making UI clones\n  </div>\n\n  <div class="wrapper text-muted b-b b-light">\n    <div class="color-black font-bold text-sm m-b">My Anthem</div>\n\n    <ion-row class="no-padder" align-items-center>\n      <ion-col>\n        <div class="m-b-sm">Shape of you</div>\n        <div>\n          <ion-icon name="ios-radio" color="like" class="m-r-sm v-align-middle"></ion-icon><span class="text-sm">Ed Sheeran</span>\n        </div>\n      </ion-col>\n      <ion-col col-auto>\n        <div class="thumb-md">\n          <img src="assets/img/instagram/insta_4.jpg" class="r-3x" alt="">\n        </div>\n      </ion-col>\n    </ion-row>\n  </div>\n\n  <ion-list *ngIf="!isMe">\n    <ion-item text-center class="l-s-1x">\n      <div ion-text color="danger" class="text-sm font-bold">\n        RECOMMEND TINDIE\n        <div class="text-xxs">TO A FRIEND</div>\n      </div>\n    </ion-item>\n    <ion-item text-center class="l-s-1x">\n      <div class="text-sm font-bold">\n        REPORT TINDIE\n      </div>\n    </ion-item>\n  </ion-list>\n\n  <div class="wrapper text-muted b-b b-light">\n    <div class="color-black font-bold text-sm m-b">645 Friends For Common Connections</div>\n\n    We compare your Facebook friends with those of your matches to display any common connections.\n  </div>\n\n  <div class="wrapper text-muted b-b b-light">\n    <instagram-photo></instagram-photo>\n  </div>\n\n  <div class="wrapper text-muted b-b b-light">\n    <div class="color-black font-bold text-sm m-b">100 Interests</div>\n\n    <div>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n    </div>\n  </div>\n\n</ion-content>\n\n<div class="bottom-buttons" *ngIf="isMe">\n  <button ion-button color="light" class="btn-default" (click)="edit()">EDIT INFO</button>\n</div>\n\n<div class="bottom-actions bottom-buttons" horizontal layout center center-center *ngIf="!isMe">\n  <button ion-button color="light" class="button-dislike">\n    <ion-icon name="md-close"></ion-icon>\n  </button>\n  <button ion-button color="light" class="button-star">\n    <ion-icon name="md-star"></ion-icon>\n  </button>\n  <button ion-button color="light" class="button-like">\n    <ion-icon name="md-heart"></ion-icon>\n  </button>\n</div>\n'/*ion-inline-end:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/profile/profile.html"*/,
+=======
+        selector: 'page-profile',template:/*ion-inline-start:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/pages/profile/profile.html"*/'<ion-content class="bottom-padding">\n  <div class="header-cover">\n    <div class="slide-pager" layout horizontal center>\n      <div flex class="pager-bullet" *ngFor="let item of slideImages; let i = index" [ngClass]="{active: i == currentSlideIndex}"></div>\n    </div>\n\n    <ion-slides (ionSlideDidChange)="slideChanged()">\n      <ion-slide *ngFor="let item of slideImages; let i = index">\n        <div [style.backgroundImage]="\'url(\' + item.url + \')\'" class="div-img"></div>\n      </ion-slide>\n    </ion-slides>\n    <button ion-button icon-button color="danger" round class="btn-rounded btn-fab" (click)="close()">\n      <ion-icon name="md-arrow-round-down"></ion-icon>\n    </button>\n  </div>\n\n  <div class="wrapper b-b b-light">\n    <div class="text-xl m-b-sm">\n      <span class="font-bold">Hieu Pham</span>, 29\n    </div>\n    <div class="text-muted l-h text-xs">\n      <ion-icon name="ios-briefcase-outline"></ion-icon>\n      Front-End, UX/UI lover\n      <br>\n      <ion-icon name="ios-pin-outline" class="m-r-xs"></ion-icon>\n      less than a kilometer away\n    </div>\n  </div>\n\n  <div class="wrapper text-muted b-b b-light">\n    A UX/UI lover who has a hobby of making UI clones\n  </div>\n\n  <div class="wrapper text-muted b-b b-light">\n    <div class="color-black font-bold text-sm m-b">My Anthem</div>\n\n    <ion-row class="no-padder" align-items-center>\n      <ion-col>\n        <div class="m-b-sm">Shape of you</div>\n        <div>\n          <ion-icon name="ios-radio" color="like" class="m-r-sm v-align-middle"></ion-icon><span class="text-sm">Ed Sheeran</span>\n        </div>\n      </ion-col>\n      <ion-col col-auto>\n        <div class="thumb-md">\n          <img src="assets/img/instagram/insta_4.jpg" class="r-3x" alt="">\n        </div>\n      </ion-col>\n    </ion-row>\n  </div>\n\n  <ion-list *ngIf="!isMe">\n    <ion-item text-center class="l-s-1x">\n      <div ion-text color="danger" class="text-sm font-bold">\n        RECOMMEND TINDIE\n        <div class="text-xxs">TO A FRIEND</div>\n      </div>\n    </ion-item>\n    <ion-item text-center class="l-s-1x">\n      <div class="text-sm font-bold">\n        REPORT TINDIE\n      </div>\n    </ion-item>\n  </ion-list>\n\n  <div class="wrapper text-muted b-b b-light">\n    <div class="color-black font-bold text-sm m-b">645 Friends For Common Connections</div>\n\n    We compare your Facebook friends with those of your matches to display any common connections.\n  </div>\n\n  <div class="wrapper text-muted b-b b-light">\n    <instagram-photo></instagram-photo>\n  </div>\n\n  <div class="wrapper text-muted b-b b-light">\n    <div class="color-black font-bold text-sm m-b">100 Interests</div>\n\n    <div>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n      <button ion-button outline small color="danger">Uniqlo Singapore</button>\n    </div>\n  </div>\n\n</ion-content>\n\n<div class="bottom-buttons" *ngIf="isMe">\n  <button ion-button color="light" class="btn-default" (click)="edit()">EDIT INFO</button>\n</div>\n\n<div class="bottom-actions bottom-buttons" horizontal layout center center-center *ngIf="!isMe">\n  <button ion-button color="light" class="button-dislike">\n    <ion-icon name="md-close"></ion-icon>\n  </button>\n  <button ion-button color="light" class="button-star">\n    <ion-icon name="md-star"></ion-icon>\n  </button>\n  <button ion-button color="light" class="button-like">\n    <ion-icon name="md-heart"></ion-icon>\n  </button>\n</div>\n'/*ion-inline-end:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/pages/profile/profile.html"*/,
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
@@ -1622,7 +1878,11 @@ var ProfileEditPage = (function () {
 }());
 ProfileEditPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+<<<<<<< HEAD
         selector: 'page-profile-edit',template:/*ion-inline-start:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/profile-edit/profile-edit.html"*/'<ion-header no-border>\n  <ion-navbar color="white">\n    <ion-title>Edit Info</ion-title>\n\n    <ion-buttons end>\n      <button ion-button clear color="danger" (click)="close()">\n        Done\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content class="bg-custom">\n  <div class="profile-images-edit">\n    <div class="profile-image" *ngFor="let image of profileImages; let i = index" (click)="openPhotoPicker(i)">\n      <div [style.backgroundImage]="\'url(\' + profileImages[i] + \')\'" class="div-img img-square r-3x"></div>\n      <button ion-button icon-only clear class="btn-edit" (click)="removeImage(i)" *ngIf="profileImages[i] != \'\'">\n        <ion-icon name="md-close" color="danger"></ion-icon>\n      </button>\n      <button ion-button icon-only clear class="btn-edit" *ngIf="profileImages[i] == \'\'">\n        <ion-icon name="md-add-circle" color="danger"></ion-icon>\n      </button>\n    </div>\n  </div>\n\n  <ion-list no-lines>\n    <ion-list-header>\n      ABOUT ME\n    </ion-list-header>\n    <ion-item class="text-muted" text-wrap>\n      <ion-textarea placeholder="Enter a description" value="A UX/UI lover who has a hobby of making UI clones"></ion-textarea>\n    </ion-item>\n    <ion-item>\n      <ion-note item-end>\n        <span class="text-xs">435</span>\n      </ion-note>\n    </ion-item>\n  </ion-list>\n\n  <ion-list>\n    <ion-list-header>\n      CURRENT WORK\n    </ion-list-header>\n    <button ion-item>\n      Front-end dev. UX/UI lover.\n    </button>\n  </ion-list>\n\n  <ion-list>\n    <ion-list-header>\n      SCHOOL\n    </ion-list-header>\n    <button ion-item>\n      Add school\n    </button>\n  </ion-list>\n\n  <ion-list>\n    <ion-list-header>\n      INSTAGRAM PHOTOS\n    </ion-list-header>\n    <ion-item>\n      <ion-icon name="logo-instagram" color="danger" item-start></ion-icon>\n      @mrhieu\n      <ion-note item-end>\n        <span class="text-xs">DISCONNECT</span>\n      </ion-note>\n    </ion-item>\n  </ion-list>\n\n  <ion-list>\n    <ion-list-header>\n      SPOTIFY ANTHEM\n    </ion-list-header>\n    <button ion-item>\n      <ion-icon name="ios-radio" color="like" item-start></ion-icon>\n      Shape of you\n      <p>Ed Sheeran</p>\n    </button>\n  </ion-list>\n\n  <ion-list>\n    <ion-list-header>\n      TOP SPOTIFY ARTIST\n    </ion-list-header>\n    <ion-item>\n      <ion-icon name="ios-radio" color="like" item-start></ion-icon>\n      Connect Spotify\n      <ion-note item-end>\n        <span class="text-xs" ion-text color="danger">CONNECT</span>\n      </ion-note>\n    </ion-item>\n  </ion-list>\n\n  <ion-list>\n    <ion-list-header>\n      GENDER\n    </ion-list-header>\n    <button ion-item>\n      Man\n    </button>\n  </ion-list>\n\n  <ion-list>\n    <ion-list-header>CONTROL YOUR PROFILE <span class="label-special">Tinder Plus</span></ion-list-header>\n    <ion-item>\n      <ion-label>Don\'t Show My Age</ion-label>\n      <ion-toggle color="danger" checked="true"></ion-toggle>\n    </ion-item>\n    <ion-item>\n      <ion-label>Don\'t Show My Distance</ion-label>\n      <ion-toggle color="danger" checked="true"></ion-toggle>\n    </ion-item>\n  </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/Users/T0mpkinz/Documents/anime/AnimeTinder/src/pages/profile-edit/profile-edit.html"*/,
+=======
+        selector: 'page-profile-edit',template:/*ion-inline-start:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/pages/profile-edit/profile-edit.html"*/'<ion-header no-border>\n  <ion-navbar color="white">\n    <ion-title>Edit Info</ion-title>\n\n    <ion-buttons end>\n      <button ion-button clear color="danger" (click)="close()">\n        Done\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content class="bg-custom">\n  <div class="profile-images-edit">\n    <div class="profile-image" *ngFor="let image of profileImages; let i = index" (click)="openPhotoPicker(i)">\n      <div [style.backgroundImage]="\'url(\' + profileImages[i] + \')\'" class="div-img img-square r-3x"></div>\n      <button ion-button icon-only clear class="btn-edit" (click)="removeImage(i)" *ngIf="profileImages[i] != \'\'">\n        <ion-icon name="md-close" color="danger"></ion-icon>\n      </button>\n      <button ion-button icon-only clear class="btn-edit" *ngIf="profileImages[i] == \'\'">\n        <ion-icon name="md-add-circle" color="danger"></ion-icon>\n      </button>\n    </div>\n  </div>\n\n  <ion-list no-lines>\n    <ion-list-header>\n      ABOUT ME\n    </ion-list-header>\n    <ion-item class="text-muted" text-wrap>\n      <ion-textarea placeholder="Enter a description" value="A UX/UI lover who has a hobby of making UI clones"></ion-textarea>\n    </ion-item>\n    <ion-item>\n      <ion-note item-end>\n        <span class="text-xs">435</span>\n      </ion-note>\n    </ion-item>\n  </ion-list>\n\n  <ion-list>\n    <ion-list-header>\n      CURRENT WORK\n    </ion-list-header>\n    <button ion-item>\n      Front-end dev. UX/UI lover.\n    </button>\n  </ion-list>\n\n  <ion-list>\n    <ion-list-header>\n      SCHOOL\n    </ion-list-header>\n    <button ion-item>\n      Add school\n    </button>\n  </ion-list>\n\n  <ion-list>\n    <ion-list-header>\n      INSTAGRAM PHOTOS\n    </ion-list-header>\n    <ion-item>\n      <ion-icon name="logo-instagram" color="danger" item-start></ion-icon>\n      @mrhieu\n      <ion-note item-end>\n        <span class="text-xs">DISCONNECT</span>\n      </ion-note>\n    </ion-item>\n  </ion-list>\n\n  <ion-list>\n    <ion-list-header>\n      SPOTIFY ANTHEM\n    </ion-list-header>\n    <button ion-item>\n      <ion-icon name="ios-radio" color="like" item-start></ion-icon>\n      Shape of you\n      <p>Ed Sheeran</p>\n    </button>\n  </ion-list>\n\n  <ion-list>\n    <ion-list-header>\n      TOP SPOTIFY ARTIST\n    </ion-list-header>\n    <ion-item>\n      <ion-icon name="ios-radio" color="like" item-start></ion-icon>\n      Connect Spotify\n      <ion-note item-end>\n        <span class="text-xs" ion-text color="danger">CONNECT</span>\n      </ion-note>\n    </ion-item>\n  </ion-list>\n\n  <ion-list>\n    <ion-list-header>\n      GENDER\n    </ion-list-header>\n    <button ion-item>\n      Man\n    </button>\n  </ion-list>\n\n  <ion-list>\n    <ion-list-header>CONTROL YOUR PROFILE <span class="label-special">Tinder Plus</span></ion-list-header>\n    <ion-item>\n      <ion-label>Don\'t Show My Age</ion-label>\n      <ion-toggle color="danger" checked="true"></ion-toggle>\n    </ion-item>\n    <ion-item>\n      <ion-label>Don\'t Show My Distance</ion-label>\n      <ion-toggle color="danger" checked="true"></ion-toggle>\n    </ion-item>\n  </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/Users/PareZIVale/Documents/hackathon/AnimeTinder/src/pages/profile-edit/profile-edit.html"*/,
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
@@ -1635,5 +1895,9 @@ ProfileEditPage = __decorate([
 
 /***/ })
 
+<<<<<<< HEAD
 },[277]);
+=======
+},[276]);
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
 //# sourceMappingURL=main.js.map

@@ -18,7 +18,11 @@
   ],
   "_resolved": "git+https://github.com/apache/cordova-plugin-statusbar.git#4c1507b525e4631ad04f3adada898845da3e3cbc",
   "_spec": "git+https://github.com/apache/cordova-plugin-statusbar.git",
+<<<<<<< HEAD:plugins/cordova-plugin-statusbar/package.json
   "_where": "/Users/T0mpkinz/Documents/anime/AnimeTinder",
+=======
+  "_where": "/Users/PareZIVale/Documents/hackathon/AnimeTinder",
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7:plugins/cordova-plugin-statusbar/package.json
   "author": {
     "name": "Apache Software Foundation"
   },

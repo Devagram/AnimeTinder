@@ -22,7 +22,11 @@
   "_resolved": "https://registry.npmjs.org/cordova-plugin-ionic-webview/-/cordova-plugin-ionic-webview-1.1.16.tgz",
   "_shasum": "92d5f2e4a5a829f91b487b1761848765a31c9f1e",
   "_spec": "cordova-plugin-ionic-webview@^1.1.15",
+<<<<<<< HEAD
   "_where": "/Users/T0mpkinz/Documents/anime/AnimeTinder",
+=======
+  "_where": "/Users/PareZIVale/Documents/hackathon/AnimeTinder",
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
   "author": {
     "name": "Ionic Team"
   },

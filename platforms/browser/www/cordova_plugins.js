@@ -1,6 +1,7 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
+<<<<<<< HEAD
         "file": "plugins/cordova-plugin-facebook4/www/facebook-browser.js",
         "id": "cordova-plugin-facebook4.FacebookConnectPluginBrowser",
         "pluginId": "cordova-plugin-facebook4",
@@ -9,6 +10,8 @@ module.exports = [
         ]
     },
     {
+=======
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
         "file": "plugins/com.synconset.imagepicker/www/imagepicker.js",
         "id": "com.synconset.imagepicker.ImagePicker",
         "pluginId": "com.synconset.imagepicker",
@@ -71,7 +74,10 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
+<<<<<<< HEAD
     "cordova-plugin-facebook4": "1.9.1",
+=======
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
     "com.synconset.imagepicker": "2.1.8",
     "cordova-plugin-device": "1.1.7",
     "cordova-plugin-ionic-webview": "1.1.16",

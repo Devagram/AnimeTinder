@@ -7,11 +7,14 @@
     "files": {}
   },
   "installed_plugins": {
+<<<<<<< HEAD
     "cordova-plugin-facebook4": {
       "APP_ID": "216929472211100",
       "APP_NAME": "Anime Tinder",
       "PACKAGE_NAME": "io.ionic.starter"
     },
+=======
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
     "com.synconset.imagepicker": {
       "PACKAGE_NAME": "io.ionic.starter"
     },

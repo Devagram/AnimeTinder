@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "cordova-plugin-facebook4": {
     "source": {
       "type": "registry",
@@ -10,6 +11,8 @@
       "APP_NAME": "Anime Tinder"
     }
   },
+=======
+>>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
   "com.synconset.imagepicker": {
     "source": {
       "type": "registry",
