@@ -92,14 +92,10 @@
     <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />
     <allow-navigation href="http://192.168.0.104:8101" />
     <allow-navigation href="http://192.168.0.104:8100" />
-<<<<<<< HEAD
     <plugin name="cordova-plugin-facebook4" spec="^1.9.1">
         <variable name="APP_ID" value="216929472211100" />
         <variable name="APP_NAME" value="Anime Tinder" />
     </plugin>
-    <engine name="browser" spec="~5.0.3" />
-    <engine name="ios" spec="~4.5.4" />
-=======
-    <engine name="browser" spec="~5.0.3" />
->>>>>>> 9dcf9d94fc10d5ff92b3686cc2355a69e0ae75c7
+    <engine name="ios" spec="4.5.4" />
+    <engine name="browser" spec="5.0.3" />
 </widget>
